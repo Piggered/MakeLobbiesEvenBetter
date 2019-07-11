@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Timers;
 
 namespace MakeLobbiesEvenBetter
@@ -23,8 +22,6 @@ namespace MakeLobbiesEvenBetter
         private long? CurrentHost;
 
         private readonly string[] SPLIT_SEPARATORS = new[] { "\r\n", "\r", "\n" };
-        private readonly string NO_LOG_MESSAGE = "Could not find Dead by Daylight's log file. Try launching Dead by Daylight.";
-        private readonly string NO_LOG_TITLE = "Log Not Found";
 
         public event EventHandler<SteamUser> NewHost;
 

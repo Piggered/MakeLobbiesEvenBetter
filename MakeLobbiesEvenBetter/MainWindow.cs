@@ -4,7 +4,6 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using System.Media;
 using System.IO;
-using Newtonsoft.Json;
 
 namespace MakeLobbiesEvenBetter
 {

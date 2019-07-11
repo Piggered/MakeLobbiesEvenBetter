@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MakeLobbiesEvenBetter
 {
     // http://pietschsoft.com/post/2009/01/26/CSharp-Flash-Window-in-Taskbar-via-Win32-FlashWindowEx
-    // Big thanks to Chris Pietschmann! <3
+    // Credits to: Chris Pietschmann
 
     public static class FlashWindow
     {

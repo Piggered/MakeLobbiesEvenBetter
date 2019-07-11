@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MakeLobbiesEvenBetter
@@ -20,6 +13,10 @@ namespace MakeLobbiesEvenBetter
         private readonly string KILL_TITLE = "Kill Dead by Daylight";
         private readonly string KILL_MESSAGE = "Do you want to forcibly close Dead by Daylight?";
         private readonly string DBD_PROCESS_NAME = "DeadByDaylight-Win64-Shipping";
+
+        private readonly string ABOUT_TITLE = "Open Program Repository";
+        private readonly string ABOUT_MESSAGE = "Do you want to open the program's repository in your browser?";
+        private readonly string ABOUT_URL = "https://github.com/Piggered/MakeLobbiesEvenBetter";
 
         public ToolboxWindow(MainWindow main, LogReader log, Settings settings)
         {
@@ -72,7 +69,12 @@ namespace MakeLobbiesEvenBetter
 
         private void AboutThisProgram_Click(object sender, EventArgs e)
         {
-            Process.Start("https://blog.piggered.me/makelobbiesevenbetter");
+            DialogResult dialogResult = MessageBox.Show(ABOUT_MESSAGE, ABOUT_TITLE, MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+
+            if (dialogResult == DialogResult.Yes)
+            {
+                Process.Start(ABOUT_URL);
+            }
         }
 
         private void HideProfiles_Click(object sender, EventArgs e)

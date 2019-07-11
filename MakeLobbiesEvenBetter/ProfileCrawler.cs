@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using HtmlAgilityPack;
-using ScrapySharp.Extensions;
 
 namespace MakeLobbiesEvenBetter
 {
@@ -17,14 +16,9 @@ namespace MakeLobbiesEvenBetter
             return web.Load(url);
         }
 
-        private static bool IsValidProfilePage(HtmlDocument document)
+        private static bool ContainsQuery(HtmlDocument document, string css)
         {
-            return HasCss(document, ".profile_page");
-        }
-
-        private static bool HasCss(HtmlDocument document, string css)
-        {
-            IEnumerable<HtmlNode> enumerable = document.DocumentNode.CssSelect(css);
+            IEnumerable<HtmlNode> enumerable = document.DocumentNode.QuerySelectorAll(css);
 
             return enumerable.Count() != 0;
         }
@@ -32,7 +26,7 @@ namespace MakeLobbiesEvenBetter
         // Info Fetch Methods
         private static string GetProfileName(HtmlDocument document)
         {
-            HtmlNode node = document.DocumentNode.CssSelect(".profile_header_centered_persona").Single();
+            HtmlNode node = document.DocumentNode.QuerySelectorAll(".profile_header_centered_persona").Single();
 
             string data = node.SelectSingleNode("div/span").InnerText;
 
@@ -41,7 +35,7 @@ namespace MakeLobbiesEvenBetter
 
         private static string GetRealName(HtmlDocument document)
         {
-            HtmlNode node = document.DocumentNode.CssSelect(".header_real_name").Single();
+            HtmlNode node = document.DocumentNode.QuerySelectorAll(".header_real_name").Single();
 
             string data = node.SelectSingleNode("bdi").InnerText;
 
@@ -50,26 +44,26 @@ namespace MakeLobbiesEvenBetter
 
         private static bool IsPrivateProfile(HtmlDocument document)
         {
-            return HasCss(document, ".profile_private_info");
+            return ContainsQuery(document, ".profile_private_info");
         }
 
         private static string GetProfilePictureUrl(HtmlDocument document)
         {
-            HtmlNode node = document.DocumentNode.CssSelect(".playerAvatarAutoSizeInner").Single();
+            HtmlNode node = document.DocumentNode.QuerySelectorAll(".playerAvatarAutoSizeInner").Single();
 
-            string data = node.SelectSingleNode("img").GetAttributeValue("src");
+            string data = node.SelectSingleNode("img").Attributes["src"].Value;
 
             return HttpUtility.HtmlDecode(data);
         }
 
         private static string GetProfileLocation(HtmlDocument document)
         {
-            if (!HasCss(document, ".profile_flag"))
+            if (!ContainsQuery(document, ".profile_flag"))
             {
                 return "";
             }
 
-            HtmlNode node = document.DocumentNode.CssSelect(".profile_flag").Single();
+            HtmlNode node = document.DocumentNode.QuerySelectorAll(".profile_flag").Single();
 
             string data = node.SelectSingleNode("following-sibling::text()[1]").InnerText.Trim();
 
@@ -81,7 +75,7 @@ namespace MakeLobbiesEvenBetter
         {
             HtmlDocument document = GetDocument("https://steamcommunity.com/profiles/" + steamID64.ToString());
 
-            if (!IsValidProfilePage(document))
+            if (!ContainsQuery(document, ".profile_page"))
             {
                 return null;
             }
@@ -93,7 +87,6 @@ namespace MakeLobbiesEvenBetter
             user.SetRealName(user.Private ? "" : GetRealName(document));
             user.SetLocation(user.Private ? "" : GetProfileLocation(document));
             
-
             return user;
         }
     }
