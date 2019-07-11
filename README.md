@@ -5,7 +5,7 @@
 
 ### [Download Make Lobbies Even Better for Windows](https://github.com/Piggered/MakeLobbiesEvenBetter/releases)
 
-# Program Requirements
+## Program Requirements
 
 * Windows 7 OS or later (8, 8.1, 10);
 * [.NET Framework 4.7](https://www.microsoft.com/en-us/download/details.aspx?id=55170) or later;
