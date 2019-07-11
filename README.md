@@ -5,7 +5,11 @@
 
 ### [Download Make Lobbies Even Better for Windows](https://github.com/Piggered/MakeLobbiesEvenBetter/releases)
 
-The **.NET Framework 4.7** (or later) is required to run this program. You can get it [here](https://www.microsoft.com/en-us/download/details.aspx?id=55170), but, it is very likely you already have it from other programs on your computer.
+# Program Requirements
+
+* Windows 7 OS or later (8, 8.1, 10);
+* [.NET Framework 4.7](https://www.microsoft.com/en-us/download/details.aspx?id=55170) or later;
+* The game [Dead by Daylight](https://store.steampowered.com/app/381210/Dead_by_Daylight/).
 
 ## Key Features of Make Lobbies Even Better
 
