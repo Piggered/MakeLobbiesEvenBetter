@@ -1,5 +1,5 @@
 # MakeLobbiesEvenBetter
-*Make Lobbies Even Better* (abbreviated *MLEB*) is a program that shows the host's Steam profile on Dead by Daylight. It uses the game's log files in order to fetch the host, then acquires the profile info directly from Steam's website.
+*Make Lobbies Even Better* (abbreviated *MLEB*) is a program that shows the host's Steam profile on Dead by Daylight. It uses the game's log files in order to fetch the host, then gets the profile info directly from Steam's website.
 
 ![Preview of the program](https://raw.githubusercontent.com/Piggered/MakeLobbiesEvenBetter/master/preview.png)
 
@@ -24,6 +24,8 @@
 <sup>**[3]**</sup> Other options and settings are available in the *Toolbox*.
 
 This program **does not** show the host's ping like [MLGA](https://github.com/PsiLupan/MakeLobbiesGreatAgain) does. If desired, you may run both programs at the same time.
+
+The program also does not work as the lobby host (killer, KYF host, etc.) due to design limitations.
 
 ## This Program Is Not Bannable
 
