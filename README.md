@@ -9,7 +9,7 @@
 
 * Windows 7 OS or later (8, 8.1, 10);
 * [.NET Framework 4.7](https://www.microsoft.com/en-us/download/details.aspx?id=55170) or later;
-* The game [Dead by Daylight](https://store.steampowered.com/app/381210/Dead_by_Daylight/).
+* [Dead by Daylight](https://store.steampowered.com/app/381210/Dead_by_Daylight/) on Steam.
 
 ## Key Features of Make Lobbies Even Better
 
@@ -20,7 +20,7 @@
 * Don't want to see the killer's profile? You can change that in the Toolbox<sup>**[3]**</sup>!
 
 <sup>**[1]**</sup> Lobby hosts consist of the following: The SWF lobby starter, the KYF host or the killer in a normal lobby.  
-<sup>**[2]**</sup> *BHVR*'d means whenever the game (Dead by Daylight) freezes or crashes for no reason.  
+<sup>**[2]**</sup> *BHVR*'d: Whenever a game by *Behaviour Interactive* freezes or crashes for no reason. 
 <sup>**[3]**</sup> Other options and settings are available in the *Toolbox*.
 
 This program **does not** show the host's ping like [MLGA](https://github.com/PsiLupan/MakeLobbiesGreatAgain) does. If desired, you may run both programs at the same time.
@@ -29,7 +29,7 @@ The program also does not work as the lobby host (killer, KYF host, etc.) due to
 
 ## This Program Is Not Bannable
 
-This program is **NOT** detected by EAC. All it does (related to the game) is read the game's log files in order to acquire a Steam ID. MLEB **does not** tamper with the game in any way.
+This program is **NOT** detected by EAC. All it does (related to the game) is read the game's log files in order to acquire a Steam ID. *MLEB* **does not** tamper with the game in any way.
 
 The game's log files can be easily accessed at: `%localappdata%\DeadByDaylight\Saved\Logs`.
 
@@ -45,7 +45,7 @@ If you wish to disable to notification feature altogether, you may turn it off i
 
 * If the program is stuck to one profile, you may have forgotten to save or cancel the note you're editing.
 * If the program is showing a random profile, remember that the program simply reads the latest host you had.
-* If none of the above applies, reload the reader by using the "Force Reload" button in the *Toolbox*. If it's still not working properly after reloading, restart the program entirely.
+* If none of the above apply, reload the reader by using the "Force Reload" button in the *Toolbox*. If it's still not working properly after reloading, restart the program entirely.
 
 ## Questions and Issues
 
