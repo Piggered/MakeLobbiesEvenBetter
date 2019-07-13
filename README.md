@@ -20,7 +20,7 @@
 * Don't want to see the killer's profile? You can change that in the Toolbox<sup>**[3]**</sup>!
 
 <sup>**[1]**</sup> Lobby hosts consist of the following: The SWF lobby starter, the KYF host or the killer in a normal lobby.  
-<sup>**[2]**</sup> *BHVR*'d: Whenever a game by *Behaviour Interactive* freezes or crashes for no reason. 
+<sup>**[2]**</sup> *BHVR*'d: Whenever a game by *Behaviour Interactive* freezes or crashes for no reason.  
 <sup>**[3]**</sup> Other options and settings are available in the *Toolbox*.
 
 This program **does not** show the host's ping like [MLGA](https://github.com/PsiLupan/MakeLobbiesGreatAgain) does. If desired, you may run both programs at the same time.
