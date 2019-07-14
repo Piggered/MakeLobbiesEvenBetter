@@ -1,4 +1,6 @@
 # MakeLobbiesEvenBetter
+[![Build Status](https://travis-ci.org/Piggered/MakeLobbiesEvenBetter.svg?branch=master)](https://travis-ci.org/Piggered/MakeLobbiesEvenBetter) [![Repository Issues](https://img.shields.io/github/issues/Piggered/MakeLobbiesEvenBetter.svg)](https://github.com/Piggered/MakeLobbiesEvenBetter/issues) [![Repository License](https://img.shields.io/github/license/Piggered/MakeLobbiesEvenBetter.svg)](https://github.com/Piggered/MakeLobbiesEvenBetter/blob/master/LICENSE)
+
 *Make Lobbies Even Better* (abbreviated *MLEB*) is a program that shows the host's Steam profile on Dead by Daylight. It uses the game's log files in order to fetch the host, then gets the profile info directly from Steam's website.
 
 ![Preview of the program](https://raw.githubusercontent.com/Piggered/MakeLobbiesEvenBetter/master/preview.png)
