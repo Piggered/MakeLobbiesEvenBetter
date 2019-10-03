@@ -4,7 +4,7 @@ This program only works when Dead by Daylight is in peer-to-peer; the logs only 
 
 On October 2nd, Behaviour started rolling out dedicated servers for Dead by Daylight to the public for testing. As such, there is no reason to continue working on this project, as the program will soon be fully unusable.
 
-If I ever somehow find another **legitimate** method to fetch the killer (very unlikely), it'll created under another repository and program.
+If I ever somehow find another **legitimate** and simple method to fetch the killer (very unlikely), it'll created under another repository and program name.
 
 # MakeLobbiesEvenBetter
 [![Build Status](https://travis-ci.org/Piggered/MakeLobbiesEvenBetter.svg?branch=master)](https://travis-ci.org/Piggered/MakeLobbiesEvenBetter) [![Repository Issues](https://img.shields.io/github/issues/Piggered/MakeLobbiesEvenBetter.svg)](https://github.com/Piggered/MakeLobbiesEvenBetter/issues) [![Repository License](https://img.shields.io/github/license/Piggered/MakeLobbiesEvenBetter.svg)](https://github.com/Piggered/MakeLobbiesEvenBetter/blob/master/LICENSE)
